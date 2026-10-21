@@ -1,7 +1,7 @@
 {
   "name": "convert-tanggal",
   "version": "1.0.0",
-  "description": "test npm",
+  "description": "convert format tanggal DD-MM-YYYY menjadi DD/MM/YYYY",
   "keywords": [
     "nodejs"
   ],
