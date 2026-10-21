@@ -6,13 +6,8 @@ function convertTanggal(date){
     const approved = cekFormat(date)
     let ans = ""
     if (approved) {
-        for (let x = 0; x < date.length; x++) {
-            if (date[x] == "-") {
-                ans += "/"
-            } else {
-                ans += date[x]
-            }
-        }
+        ans = date.replace("-", "/")
+        ans = ans.replace("-", "/")
     } else {
         ans = ""
         ans += "Format tanggal tidak valid."
@@ -39,7 +34,10 @@ function cekFormat(str) {
 const ans = convertTanggal(tanggal)
 console.log(ans)
 
-// const tanggalMoment = moment().format('DD-MM-YYYY')
-const tanggalMoment = moment().format('DD/MM/YYYY')
+function convertTanggalMoment(str) {
+    const ans = moment(str, "DD-MM-YYYY").format("DD/MM/YYYY")
+    return ans
+}
 
+const tanggalMoment = convertTanggalMoment(tanggal)
 console.log(tanggalMoment)
