@@ -1,3 +1,3 @@
-# Program: Konversi Format Tanggal
+# Materi: npm - External Packages
 
-Mengubah format tanggal DD-MM-YYYY menjadi DD/MM/YYYY
+Membuat program konversi format tanggal dengan cara kerja mengubah input DD-MM-YYYY menjadi DD/MM/YYYY dengan package moment
